@@ -32,6 +32,9 @@ body {
     padding: 40px 30px;
     text-align: center;
 }
+.sidebar a{
+    color: white;
+}
 
 .profile-pic {
     width: 150px;
@@ -47,8 +50,9 @@ body {
     margin-bottom: 20px;
 }
 
-.contact p {
+.contact p, .contact a {
     margin: 6px 0;
+    text-decoration: none;
 }
 
 /* SKILLS */
@@ -81,6 +85,11 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
+.card .certifications a{
+    text-decoration: none;
+    color: black;
+}
+
 h2 {
     margin-bottom: 10px;
     color: #2c3e50;
@@ -99,6 +108,32 @@ h2 {
 }
 
 .btn:hover {
+    background: #2c3e50;
+}
+
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: #4ca1af;
+    color: white;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.8rem;
+
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
     background: #2c3e50;
 }
 
